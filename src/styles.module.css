@@ -9,9 +9,7 @@ body
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
-
-    overflow-x: hidden;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -211,7 +209,7 @@ header .bpImg
     main
     {
         margin: 0;
-        margin-left: -80px;
+        margin-left: 0px;
     }
 
     .SpinDiv

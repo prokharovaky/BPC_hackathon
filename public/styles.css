@@ -15,8 +15,6 @@ body
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;  
-    overflow-y: scroll;
-    height: 1440px;
     padding-right: -10px;
 }
 
@@ -27,7 +25,7 @@ main
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: 0px;
 }
 header 
 {
@@ -173,7 +171,7 @@ header
 #SpinButton
 {
     border-radius: 40px ;
-    width: 400px;
+    width: fit-content;
     height: 52px;
     border: 1px #ffffff solid;
     background-color: #ffffff21;
@@ -181,6 +179,8 @@ header
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .bpImg
@@ -272,6 +272,47 @@ header .bpImg
     padding-bottom: 40px;
     background-image: url(./images/card1.png);
 }
+
+#modalBack
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    background-color: #ffffff0c;
+    backdrop-filter: blur(5px); /* Размытие на 10px */
+    visibility: hidden;
+}
+
+
+#modal
+{
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    /* background-color: #ffffff; */
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    visibility: hidden;
+    background-image: url(./images/Modal.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 560px) {
     header .logo 

@@ -47,20 +47,127 @@ function speenTheWheel()
     numberOfPoints -=100;
     points.textContent = numberOfPoints;
 
+    const modalBack = document.getElementById("modalBack");
+    const modal = document.getElementById("modal");
+    const button = document.getElementById("SpinButton");
+
     ModalPromise.then((deg) => {
         if (deg > 360) {
             deg = deg % 360;
         }
 
-        console.log("Промис выполнен с углом:", deg);
-    
-        setShowModal(true);
+        const modalBack = document.getElementById("modalBack");
+        const modal = document.getElementById("modal");
+
+        switch (true) {
+            case (deg >= 0 && deg < 30):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBP10.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 30 && deg < 60):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/Modal10.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 60 && deg < 90):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/Modal10.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 90 && deg < 120):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBP20.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 120 && deg < 150):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBPYandex.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 150 && deg < 180):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalSOSEDI.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 180 && deg < 210):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/Modal.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 210 && deg < 240):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalNEFT.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 240 && deg < 270):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBP5.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 270 && deg < 300):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBPKAVA.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 300 && deg < 330):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBPEvro.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+            case (deg >= 330 && deg < 360):
+                setTimeout(() => {
+                    modalBack.style.visibility = 'visible';
+                    modal.style.backgroundImage = 'url(./images/ModalBPYandex.png)';
+                    modal.style.visibility = 'visible';
+                }, 1500);
+                break;
+        }
+
+
     });
 
 
 }
 
-{showModal && <Modal angle="340" onClose={() => setShowModal(false)} />} {/* Рендерим модальное окно */}
+const modWin = document.getElementById("modal");
+const modWinBack = document.getElementById("modalBack");
+const button = document.getElementById("SpinButton");
+function hideModal(){
+    modWin.style.visibility = 'hidden';
+    modWinBack.style.visibility = 'hidden';
+    if(modWinBack.style.visibility == 'hidden')
+    {
+        // button.style.width = "400px"; 
+        button.textContent = "Вы можете сыграть снова через месяц";
+    }
+    spinWheelButton.removeEventListener("click", speenTheWheel);
+}
+
+modWin.addEventListener("click", hideModal);
+
 
 let spinWheelButton = document.getElementById("SpinButton");
 spinWheelButton.addEventListener("click", speenTheWheel);
