@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 import '../src/styles.module.css';
 
+const Modal = ({ angle, onClose }) => {
+    return ReactDOM.createPortal(
+      <div className="modal">
+        <h1>Angle: {angle}</h1>
+        <button onClick={onClose}>Close</button>
+      </div>,
+      document.getElementById('root')
+    );
+  };
+
+
 const App = () => {
+    const [showModal, setShowModal] = useState(false);
+
 function speenTheWheel()
 {
     let randomDeg = Math.floor(Math.random() * 360);
@@ -15,39 +29,38 @@ function speenTheWheel()
     const steps = duration / intervalTime;  // Количество шагов анимации
     const rotationPerStep = totalRotation / steps; 
     
-    const interval = setInterval(() => {
-        currentRotation += rotationPerStep;
-        image.style.transform = `rotate(${currentRotation}deg)`;  
+    const ModalPromise = new Promise((resolve, reject) => {
+        const interval = setInterval(() => {
+            currentRotation += rotationPerStep;
+            image.style.transform = `rotate(${currentRotation}deg)`;  
 
-        if (currentRotation >= totalRotation) {
-            clearInterval(interval);
-        }
-    }, intervalTime);
+
+            if (currentRotation >= totalRotation) {
+                clearInterval(interval);
+                resolve(currentRotation); 
+            }
+        }, intervalTime);
+    });
 
     let points = document.getElementById("points");
     let numberOfPoints = points.textContent;
-    numberOfPoints -=25;
+    numberOfPoints -=100;
     points.textContent = numberOfPoints;
 
-
-    const ModalPromise = new Promise((resolve, reject) => {
-        setTimeout(()=>{
-            resolve(currentRotation);
-        }, 3100);
-    }
-    );
-
     ModalPromise.then((deg) => {
-        if(deg>360)
-        {
-            deg = deg%360;
+        if (deg > 360) {
+            deg = deg % 360;
         }
 
+        console.log("Промис выполнен с углом:", deg);
+    
+        setShowModal(true);
     });
 
 
 }
 
+{showModal && <Modal angle="340" onClose={() => setShowModal(false)} />} {/* Рендерим модальное окно */}
 
 let spinWheelButton = document.getElementById("SpinButton");
 spinWheelButton.addEventListener("click", speenTheWheel);

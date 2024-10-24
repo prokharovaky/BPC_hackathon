@@ -11,7 +11,7 @@ body
     background-repeat: no-repeat;
 
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@ header
     width: 92vw;
     height: 75px;
     margin-top: 40px;
-    /* background-color:  rgba(255, 255, 255, 0.123); */
+    background-color:  rgba(255, 255, 255, 0.123);
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -37,6 +37,7 @@ header
     justify-content: space-between;
     /* opacity: 50%; */
     position: fixed;
+    z-index: 10000;
 }
 
 .logo 
@@ -190,4 +191,85 @@ header .bpImg
 {
     margin-left: 30px;
     height: 22px;
+}
+
+.card_buuton
+{
+    background-color: #ffffff;
+    width: 250px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 560px) {
+    header .logo 
+    {
+        width: 56px;
+        height: 56px;
+    }
+
+    main
+    {
+        margin: 0;
+        margin-left: -80px;
+    }
+
+    .SpinDiv
+    {
+        margin: 0;
+    }
+
+    .SpinTheWheel
+    {
+        margin: 0;
+    }
+
+    header
+    {
+        width: 80vw;
+        height: min-content;
+        padding: 0 25px 0 25px;
+        margin: 20px;
+    }
+
+    .text1, #points
+    {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .head1, .head2
+    {
+        margin: 0;
+    }
+    body
+    {
+        overflow-x: hidden;
+        background-image: cover;
+        background-repeat: repeat;
+        height: 920px;
+        background-image: url(./images/mobiBack.png);
+
+    }
+
+    .lk
+    {
+        margin-left: 10px;
+    }
+
+    .cards
+    {
+        display: none;
+        flex-direction: column;
+    }
+
+    .SpinningImg
+    {
+        width: 800px;
+    }
+    #SpImg
+    {
+        width: 800px;
+    }
+    
 }
