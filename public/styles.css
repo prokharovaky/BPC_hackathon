@@ -173,6 +173,7 @@ header
     border-radius: 40px ;
     width: fit-content;
     height: 52px;
+    height: fit-content;
     border: 1px #ffffff solid;
     background-color: #ffffff21;
     font-size: 28px;
