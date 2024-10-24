@@ -71,7 +71,7 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");
-                    modal.style.backgroundImage = 'url(./images/Modal10.png)';
+                    modal.style.backgroundImage = 'url(./images/Modal.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
@@ -98,7 +98,7 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");
-                    modal.style.backgroundImage = 'url(./images/ModalBPYandex.png)';
+                    modal.style.backgroundImage = 'url(./images/ModalBPyandex.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
@@ -107,7 +107,7 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");
-                    modal.style.backgroundImage = 'url(./images/ModalSOSEDI.png)';
+                    modal.style.backgroundImage = 'url(./images/ModalBPSOSEDI.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
@@ -125,7 +125,7 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");                  
-                    modal.style.backgroundImage = 'url(./images/ModalNEFT.png)';
+                    modal.style.backgroundImage = 'url(./images/ModalBPNEFT.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
@@ -153,7 +153,7 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");
-                    modal.style.backgroundImage = 'url(./images/ModalBPEvro.png)';
+                    modal.style.backgroundImage = 'url(./images/ModalBPevro.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
@@ -162,7 +162,7 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");            
-                    modal.style.backgroundImage = 'url(./images/ModalBPYandex.png)';
+                    modal.style.backgroundImage = 'url(./images/ModalBPyandex.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
@@ -171,17 +171,13 @@ function speenTheWheel()
                 setTimeout(() => {
                     const modalBack = document.getElementById("modalBack");
                     const modal = document.getElementById("modal");            
-                    modal.style.backgroundImage = 'url(./images/ModalBPYandex.png)';
+                    modal.style.backgroundImage = 'url(./images/ModalBPyandex.png)';
                     modal.style.visibility = 'visible';
                     modalBack.style.visibility = 'visible';
                 }, 1500);
                 break;
         }
-
-
     });
-
-
 }
 
 const modWin = document.getElementById("modal");
