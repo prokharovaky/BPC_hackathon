@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/BPC_hackathon/static/css/main.ad1dee30.css",
-    "main.js": "/BPC_hackathon/static/js/main.51fd44b6.js",
+    "main.css": "/BPC_hackathon/static/css/main.273ef539.css",
+    "main.js": "/BPC_hackathon/static/js/main.4677598f.js",
     "static/js/453.ed3810f9.chunk.js": "/BPC_hackathon/static/js/453.ed3810f9.chunk.js",
     "static/media/mobiBack.png": "/BPC_hackathon/static/media/mobiBack.583ee834fa236310e169.png",
     "static/media/backg.png": "/BPC_hackathon/static/media/backg.7584b41d8bd6776bf167.png",
     "index.html": "/BPC_hackathon/index.html",
-    "main.ad1dee30.css.map": "/BPC_hackathon/static/css/main.ad1dee30.css.map",
-    "main.51fd44b6.js.map": "/BPC_hackathon/static/js/main.51fd44b6.js.map",
+    "main.273ef539.css.map": "/BPC_hackathon/static/css/main.273ef539.css.map",
+    "main.4677598f.js.map": "/BPC_hackathon/static/js/main.4677598f.js.map",
     "453.ed3810f9.chunk.js.map": "/BPC_hackathon/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad1dee30.css",
-    "static/js/main.51fd44b6.js"
+    "static/css/main.273ef539.css",
+    "static/js/main.4677598f.js"
   ]
 }
