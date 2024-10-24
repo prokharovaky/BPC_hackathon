@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/BPC_hackathon/static/css/main.c4d02ebd.css",
-    "main.js": "/BPC_hackathon/static/js/main.f6a4d096.js",
+    "main.css": "/BPC_hackathon/static/css/main.65afdcce.css",
+    "main.js": "/BPC_hackathon/static/js/main.0de161b5.js",
     "static/js/453.ed3810f9.chunk.js": "/BPC_hackathon/static/js/453.ed3810f9.chunk.js",
-    "static/media/backg.png": "/BPC_hackathon/static/media/backg.4a5bebbceee643e192a7.png",
+    "static/media/mobiBack.png": "/BPC_hackathon/static/media/mobiBack.583ee834fa236310e169.png",
+    "static/media/backg.png": "/BPC_hackathon/static/media/backg.7584b41d8bd6776bf167.png",
     "index.html": "/BPC_hackathon/index.html",
-    "main.c4d02ebd.css.map": "/BPC_hackathon/static/css/main.c4d02ebd.css.map",
-    "main.f6a4d096.js.map": "/BPC_hackathon/static/js/main.f6a4d096.js.map",
+    "main.65afdcce.css.map": "/BPC_hackathon/static/css/main.65afdcce.css.map",
+    "main.0de161b5.js.map": "/BPC_hackathon/static/js/main.0de161b5.js.map",
     "453.ed3810f9.chunk.js.map": "/BPC_hackathon/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4d02ebd.css",
-    "static/js/main.f6a4d096.js"
+    "static/css/main.65afdcce.css",
+    "static/js/main.0de161b5.js"
   ]
 }
