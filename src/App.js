@@ -16,6 +16,18 @@ const Modal = ({ angle, onClose }) => {
     imageSrc = 'path_to_image_3.jpg';
     message = 'Ты выиграл что-то!';
   }
+   } else if (angle >= 90 && angle < 120) {
+    imageSrc = 'path_to_image_3.jpg';
+    message = 'Ты выиграл что-то!';
+  }
+ } else if (angle >= 120 && angle < 150) {
+    imageSrc = 'path_to_image_3.jpg';
+    message = 'Ты выиграл что-то!';
+  }
+ } else if (angle >= 150 && angle < 180) {
+    imageSrc = 'path_to_image_3.jpg';
+    message = 'Ты выиграл что-то!';
+  }
 
   return ReactDOM.createPortal(
     <div className="modal">
