@@ -161,7 +161,7 @@ function hideModal(){
     if(modWinBack.style.visibility == 'hidden')
     {
         // button.style.width = "400px"; 
-        button.textContent = "Вы можете сыграть снова через месяц";
+        // button.textContent = "Вы можете сыграть снова через месяц";
     }
     // spinWheelButton.removeEventListener("click", speenTheWheel);
 }
