@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BPC_hackathon/static/css/main.c4d02ebd.css",
+    "main.js": "/BPC_hackathon/static/js/main.f6a4d096.js",
+    "static/js/453.ed3810f9.chunk.js": "/BPC_hackathon/static/js/453.ed3810f9.chunk.js",
+    "static/media/backg.png": "/BPC_hackathon/static/media/backg.4a5bebbceee643e192a7.png",
+    "index.html": "/BPC_hackathon/index.html",
+    "main.c4d02ebd.css.map": "/BPC_hackathon/static/css/main.c4d02ebd.css.map",
+    "main.f6a4d096.js.map": "/BPC_hackathon/static/js/main.f6a4d096.js.map",
+    "453.ed3810f9.chunk.js.map": "/BPC_hackathon/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4d02ebd.css",
+    "static/js/main.f6a4d096.js"
+  ]
+}
