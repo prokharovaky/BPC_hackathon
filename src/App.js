@@ -163,7 +163,7 @@ function hideModal(){
         // button.style.width = "400px"; 
         button.textContent = "Вы можете сыграть снова через месяц";
     }
-    spinWheelButton.removeEventListener("click", speenTheWheel);
+    // spinWheelButton.removeEventListener("click", speenTheWheel);
 }
 
 modWin.addEventListener("click", hideModal);

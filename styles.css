@@ -173,6 +173,7 @@ header
     border-radius: 40px ;
     width: fit-content;
     height: 52px;
+    height: max-content;
     border: 1px #ffffff solid;
     background-color: #ffffff21;
     font-size: 28px;
@@ -371,7 +372,7 @@ header .bpImg
     
     #SpinButton
     {
-        width: 60vw;
+        width: max-content;
         font-size: 20px;
     }
     
