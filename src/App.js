@@ -7,25 +7,25 @@ const Modal = ({ angle, onClose }) => {
   let message = '';
 
   if (angle >= 0 && angle < 30) {
-    imageSrc = 'path_to_image_1.jpg';
+    imageSrc = '';
     message = 'Ты выиграл что-то!';
   } else if (angle >= 30 && angle < 60) {
-    imageSrc = 'path_to_image_2.jpg';
+    imageSrc = '';
     message = 'Ты выиграл что-то!';
   } else if (angle >= 60 && angle < 90) {
-    imageSrc = 'path_to_image_3.jpg';
+    imageSrc = '';
     message = 'Ты выиграл что-то!';
   }
    } else if (angle >= 90 && angle < 120) {
-    imageSrc = 'path_to_image_3.jpg';
+    imageSrc = '';
     message = 'Ты выиграл что-то!';
   }
  } else if (angle >= 120 && angle < 150) {
-    imageSrc = 'path_to_image_3.jpg';
+    imageSrc = '';
     message = 'Ты выиграл что-то!';
   }
  } else if (angle >= 150 && angle < 180) {
-    imageSrc = 'path_to_image_3.jpg';
+    imageSrc = '';
     message = 'Ты выиграл что-то!';
   }
 
@@ -34,7 +34,7 @@ const Modal = ({ angle, onClose }) => {
       <h1>Angle: {angle}</h1>
       <img src={imageSrc} alt="Result" />
       <p>{message}</p>
-      <button onClick={onClose}>Close</button>
+      <button onClick={onClose}>Закрыть</button>
     </div>,
     document.getElementById('root')
   );
@@ -78,7 +78,7 @@ const App = () => {
         deg = deg % 360;
       }
       setRotationAngle(deg);
-      setShowModal(true); // Show modal after the spin
+      setShowModal(true); 
     });
   };
 
