@@ -6,7 +6,6 @@ const Modal = ({ angle, onClose }) => {
   let imageSrc = '';
   let message = '';
 
-  // Determine modal content based on angle
   if (angle >= 0 && angle < 30) {
     imageSrc = 'path_to_image_1.jpg';
     message = 'You landed between 0 and 30 degrees!';
@@ -17,7 +16,6 @@ const Modal = ({ angle, onClose }) => {
     imageSrc = 'path_to_image_3.jpg';
     message = 'You landed between 60 and 90 degrees!';
   }
-  // Add more conditions as needed for other ranges
 
   return ReactDOM.createPortal(
     <div className="modal">
